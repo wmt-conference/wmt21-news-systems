@@ -1,1 +1,3 @@
-# wmt21-news-systems
+# WMT21 News Systems
+
+All submissions for WMT21 news task
