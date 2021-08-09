@@ -53,7 +53,7 @@
         <seg id="9">Earlier, the KP.ru website reported that Mikhail Degtyarev advocated an open trial of Sergei Furgal and considers it fair to hold it in Khabarovsk.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">No need to demonize the people of Khabarovsk</seg>
         <seg id="2">The acting head of Khabarovsk Krai spoke about his trip to the region in an exclusive interview with Komsomolskaya Pravda</seg>
@@ -216,7 +216,7 @@
         <seg id="7">Hannah's arrival in Mexico is expected Sunday morning.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Hurricane Hanna alerts in two Mexican states</seg>
         <seg id="2">The Mexican National Directorate of Civil Defense has announced an "orange" (high) alert level in the two eastern states of Tamaulipas and Nuevo Len due to the approaching Hurricane Hanna, TASS reports.</seg>
@@ -449,7 +449,7 @@
         <seg id="29">The judicial investigation into the case of Valvo Semilarski is still ongoing.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Semilarski against the prosecutor's office: the appeal of the former deputy mayor of Tartu will be considered on August 4</seg>
         <seg id="2">This means that a decision on it is likely to be made in early September.</seg>
@@ -812,7 +812,7 @@
         <seg id="12">Most people write directly that they like the original, which at one time became a hit, more.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The former soloist of the group "Hands Up" visited the Tver region</seg>
         <seg id="2">The former soloist of the group "Hands Up," and now a solo performer, businessman and actor, Sergei hukov, posted on his official Instagram account a photo from Kalyazin in the Tver region.</seg>
@@ -994,7 +994,7 @@
         <seg id="5">Earlier in May, Deputy Defense Minister Alexei Krivoruchko reported that the ship's complex with the latest hypersonic Zircon missile will be put into service in 2021-2022.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The Ministry of Defense reported the successful completion of tests of the ircon hypersonic missile</seg>
         <seg id="2">The Ministry of Defense of the Russian Federation reported the successful completion of tests of the hypersonic missile "Tsirkon."</seg>
@@ -1566,7 +1566,7 @@
         <seg id="159">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">You all know the truth that will be discussed today.</seg>
         <seg id="2">I think the idea of inequality as a divider and destroyer of society was in the air even before the French Revolution.</seg>
@@ -3087,7 +3087,7 @@
         <seg id="9">Together with Lokomotiv, Khavbek became the champion of Russia (2017/18), won the National Cup three times (2014/15, 2016/17, 2018/19) and once the Russian Super Cup (2019).</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Clubs claiming the star of Lokomotiv Miranchuk and his salary in Italy became known.</seg>
         <seg id="2">According to SE, at the moment, Lokomotiv midfielder Aleksei Miranchuk is being claimed by Serie A teams Milan, Lazio, Fiorentina and Atalanta.</seg>
@@ -3254,7 +3254,7 @@
         <seg id="8">The Emirate is the third largest exporter of natural gas, the sixth largest exporter of natural gas and a major exporter of oil and oil products.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">U.S. calls on atar and its neighbors to end the dispute</seg>
         <seg id="2">It is necessary to restore trust and unity between atar and other states, believes U.S. Special Representative for Iran Brian Hook.</seg>
@@ -3428,7 +3428,7 @@
         <seg id="12">It is reported that a person suspected of coronavirus crossed the demarcation line on Sunday, July 19.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">What happened this night: Sunday, July 26</seg>
         <seg id="2">Voluntary vaccination against COVID-19, meeting of Acting Degtyarev with participants of the rally in support of Furgal, the first potential case of coronavirus in the DPRK</seg>
@@ -3618,7 +3618,7 @@
         <seg id="7">Citizens are reminded not to leave their personal and banking data on unverified websites.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Stavropol warned about a new scheme of credit online fraud</seg>
         <seg id="2">The administration of Stavropol warned about a new scheme of credit online fraud.</seg>
@@ -3763,7 +3763,7 @@
         <seg id="7">The causes of the accident have not yet been specified.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">At least 13 people died in a bus accident in Vietnam</seg>
         <seg id="2">At least 13 people have died in a bus accident in uang Binh province in central Vietnam.</seg>
@@ -3904,7 +3904,7 @@
         <seg id="6">"Complaints are not corrections, condemnation is not diplomacy," D. Russell noted, adding that the statements of the US Secretary of State could worsen bilateral relations.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Former American diplomat called M. Pompeo's anti-China statements "primitive and ineffective"</seg>
         <seg id="2">The highly provocative speech by US Secretary of State Michael Pompeo at the Richard Nixon Presidential Library, aimed at vilifying China, is "primitive and ineffective."</seg>
@@ -4036,7 +4036,7 @@
         <seg id="6">Atmospheric pressure will be 750 mm.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Forecasters spoke about the weather in the capital on July 26</seg>
         <seg id="2">In the Moscow region, light rains and variable cloudiness are expected on Sunday, July 26, according to the Hydrometcenter of Russia.</seg>
@@ -4180,7 +4180,7 @@
         <seg id="9">Earlier, MK in Volgograd wrote about a major fire in the Dzerzhinsky district.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A fire broke out on the territory of the Volgograd Tractor Plant</seg>
         <seg id="2">The fire happened at the site of the tractor factory.</seg>
@@ -4347,7 +4347,7 @@
         <seg id="8">The United States leads in the number of infections (4 million), followed by Brazil (2.3 million) and India (1.3 million).</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">First case of suspected coronavirus recorded in the DPRK</seg>
         <seg id="2">The DPRK authorities have reported the first case of suspected coronavirus infection in the country.</seg>
@@ -4497,7 +4497,7 @@
         <seg id="6">Sergei also noted that he loves running very much, which is a great way to get rid of extra pounds.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Sergey Lazarev reported that during the period of self-isolation he recovered, and then lost 8 kg</seg>
         <seg id="2">Russian singer Sergei Lazarev admitted that during his self-isolation, he first recovered, and then saw changes in his body and took himself seriously.</seg>
@@ -4653,7 +4653,7 @@
         <seg id="12">In total, about 15 thousand military personnel and more than 250 ships took part in the events.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The main naval parade in honor of Navy Day ended in Saint Petersburg</seg>
         <seg id="2">The main naval parade dedicated to the celebration of the Day of the Russian Navy has ended in the waters of Kronstadt.</seg>
@@ -4847,7 +4847,7 @@
         <seg id="8">The website also wrote that Ukrainian President Volodymyr Zelensky visited Italy and went to the Vatican, where he received an audience with Pope Francis and asked for help in establishing peace in Ukraine.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The Pope welcomed the agreement on Donbass</seg>
         <seg id="2">The sides cease fire on the demarcation line on July 27</seg>
@@ -5001,7 +5001,7 @@
         <seg id="7">Also on July 26, pilots of the Russian Knights aviation group demonstrated aerobatics figures in the sky over Vladivostok in honor of Navy Day.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Putin announced the inclusion of 40 new ships in the Navy</seg>
         <seg id="2">Forty new ships will be accepted into the Russian Navy.</seg>
@@ -5138,7 +5138,7 @@
         <seg id="5">This is an indescribable atmosphere in the locker room when the team rallies before big matches, "Ovechkin was quoted as saying by the Russian-language version of the NHL's official website.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Alexander Ovechkin: "Washington" misses hockey and goes to Toronto with joy</seg>
         <seg id="2">Washington striker Alexander Ovechkin admitted that he was looking forward to the resumption of the season.</seg>
@@ -5265,7 +5265,7 @@
         <seg id="7">Either 400 hours of community service or imprisonment for up to a year.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A woman was detained in Kostanay for a post on Instagram</seg>
         <seg id="2">She spread fake information.</seg>
@@ -5410,7 +5410,7 @@
         <seg id="7">According to Roscosmos, defective parts were manufactured at the Ust-Katavsk plant in Chelyabinsk in 2015-2016.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Russian Proton is ready to conquer the open space</seg>
         <seg id="2">The Proton-M rocket is ready for launch, during which it will put into orbit two telecommunications satellites of the Express series.</seg>
@@ -5559,7 +5559,7 @@
         <seg id="8">And at the intermediate finish in the middle of the race, Fedotov and Zakharevsky split 0.001 seconds altogether.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Remenyako won the second race in the SMP GT4 RUSSIA class.</seg>
         <seg id="2">Evgeny Kulikov, whose Porsche Cayman was damaged in the first race, could not get to the start.</seg>
@@ -5713,7 +5713,7 @@
         <seg id="7">Major repairs and reconstruction of certain sections will be carried out, and the quality of the road surface will improve.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Two more motorways entered the list of federal roads</seg>
         <seg id="2">The Russian government has added two more highways to the list of federal highways.</seg>
@@ -5850,7 +5850,7 @@
         <seg id="5">But cinemas in the premises do not plan to open until the third stage of lifting restrictions, the agency recalls.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Tatarstan, it was allowed to hold film screenings in the open air</seg>
         <seg id="2">The Cabinet of Ministers of Tatarstan has published a decree according to which, from July 27, it is possible to hold film screenings in open areas in the republic - in parks, squares and on embankments, writes "Tatar-inform."</seg>
@@ -6001,7 +6001,7 @@
         <seg id="13">After that, the Caps will also have to play with the Philadelphia Flyers (August 6) and the Boston Bruins (August 9).</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Washington is looking forward to the playoffs.</seg>
         <seg id="2">We missed them</seg>
@@ -6236,7 +6236,7 @@
         <seg id="16">He died of his injuries.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A Russian man refused to pay for parking and beat a parking worker</seg>
         <seg id="2">In Vladivostok, a man refused to pay for parking and hit a parking employee, police are conducting an inspection.</seg>
@@ -6736,7 +6736,7 @@
         <seg id="102">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Recently, cyber attacks on the business world have become more frequent.</seg>
         <seg id="2">Access to data from companies such as JP Morgan, Yahoo, Home Depot and Target has cost them hundreds of millions and, in some cases, billions of dollars.</seg>
@@ -7740,7 +7740,7 @@
         <seg id="8">"There is something people can learn from animals," they write in the comments.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Video of cats helping a wounded dog cross the road</seg>
         <seg id="2">A video of two cats who helped an injured dog cross the road in Krasnodar Krai is becoming popular online.</seg>
@@ -7926,7 +7926,7 @@
         <seg id="15">In Vladivostok, the holiday ended with fireworks.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">On Sunday, parades in honor of the Day of the Russian Navy were held in Saint Petersburg and near all major naval bases, including in Tartus, Syria.</seg>
         <seg id="2">They were attended by 219 different ships and 15 thousand personnel.</seg>
@@ -8139,7 +8139,7 @@
         <seg id="6">Earlier it was reported that a parade in honor of Navy Day began in St. Petersburg.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The Russian Navy will receive 40 ships and vessels this year</seg>
         <seg id="2">Forty ships and vessels will join the Russian Navy this year, Russian President Vladimir Putin said.</seg>
@@ -8279,7 +8279,7 @@
         <seg id="8">Pensioner missing without trace in Volgograd region</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A four-year-old child was injured in an accident near Volgograd</seg>
         <seg id="2">On Saturday, July 25, at 11: 28 a.m., an accident occurred on a dirt road five kilometers from the Medvedev farm.</seg>
@@ -8425,7 +8425,7 @@
         <seg id="5">The Head of the Technical Department of the Northern Fleet, Rear Admiral Sergei Grishko, was thanked by the President of the Russian Federation.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Northern Fleet officers receive state awards</seg>
         <seg id="2">The commander of the Northern Fleet, Hero of Russia, Vice Admiral Alexander Moiseev, presented state awards to distinguished officers.</seg>
@@ -8620,7 +8620,7 @@
         <seg id="24">Further, they could fall to 4% if the Central Bank lowers the key rate in the fall, Pokatovich believes.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">How will the decision of the Central Bank to reduce the key rate affect the economy?</seg>
         <seg id="2">The Bank of Russia expectedly cut its key rate again.</seg>
@@ -8910,7 +8910,7 @@
         <seg id="5">Earlier it became known that the prime minister's party returned 110,100 euros to the state, which were recognized as a prohibited donation.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Centre Party promises to pay all its debts by the end of the year</seg>
         <seg id="2">The Secretary General of the Centrist Party, Mikhail Korb, spoke about this in an interview with ERR.</seg>
@@ -9029,7 +9029,7 @@
         <seg id="5">The exact circumstances of the incident are being clarified.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A car and a caravan collided in Harju County: four people were injured</seg>
         <seg id="2">According to police, the accident occurred at 13: 50 in the village of Soodla, where a Mercedes-Benz car driven by a 31-year-old woman collided with a Fiat caravan with a 48-year-old man behind the wheel.</seg>
@@ -9152,7 +9152,7 @@
         <seg id="6">At a meeting of the contact group on Donbas held on Wednesday, the parties agreed on a set of additional measures to control the truce, which, among other things, includes a ban on the activities of sabotage and reconnaissance groups and a ban on firing, including sniper fire.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Ukrainian military will monitor ceasefire in Donbass</seg>
         <seg id="2">The Ukrainian military has begun preparations for a ceasefire on the demarcation line in Donbass, and military personnel with experience in peacekeeping missions will monitor the implementation of the agreements, reports the headquarters of the Joint Forces on Facebook.</seg>
@@ -9284,7 +9284,7 @@
         <seg id="6">Of these, 13.3 thousand people died, another 600.3 thousand were cured.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">13 patients with coronavirus died in Moscow</seg>
         <seg id="2">Another 13 patients with coronavirus have died in Moscow over the past 24 hours.</seg>
@@ -9420,7 +9420,7 @@
         <seg id="7">Earlier, two warehouses caught fire at a mineral water plant in the Stavropol Territory, and the fire occurred on an area of almost 3,000 square metres.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A fire broke out in a bakery near Penza</seg>
         <seg id="2">The fire occurred in the building of the bakery "Kanaevsky bakery" in the Penza region, the Ministry of Emergency Situations reported.</seg>
@@ -9593,7 +9593,7 @@
         <seg id="14">His destructive behavior is a cry of despair, an attempt to either kill or get her attention.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Psychologist: "Yemelyanenko still can't forget the parting with his beloved woman."</seg>
         <seg id="2">Psychologist Veronika Stepanova, who has more than 1 million subscribers on YouTube, spoke about MMA fighter Aleksandr Yemelyanenko, who is the former husband of her sister.</seg>
@@ -9793,7 +9793,7 @@
         <seg id="5">Drury was selected by Carolina for the 2018 draft at No. 42 overall.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Karolina Avenue will leave to play in Sweden.</seg>
         <seg id="2">The Carolina prospectus, Jack Drury, will compete in the Swedish championship next season, reports The Hockey News journalist Ryan Kennedy on Twitter.</seg>
@@ -9968,7 +9968,7 @@
         <seg id="19">Proza played 7 matches for the Estonian national team.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Albert Proza has signed a contract with Legion Tallinn</seg>
         <seg id="2">Proza's last club was Tammeka Tartu, for which he competed last season.</seg>
@@ -10217,7 +10217,7 @@
         <seg id="6">Also, within the framework of the St. Petersburg parade, a flight of the parade group of naval aviation took place.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The main parade in honor of Navy Day took place in Saint Petersburg</seg>
         <seg id="2">The main parade in honor of the Day of the Russian Navy was held in Saint Petersburg today.</seg>
@@ -10341,7 +10341,7 @@
         <seg id="4">Rescuers brought Vanik A. to an ambulance, which took him to the Kapansky MC, where doctors assessed their condition as serious.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Accident in Kapan involving an Iranian truck and a passenger car</seg>
         <seg id="2">On July 25, at 01: 23 hours, the National Center for Crisis Management of the Rescue Service of the Ministry of Emergency Situations of the Republic of Armenia received a signal that an accident had occurred in Kapan (Syunik region) on Gortsaranain Street, and that rescue assistance was needed.</seg>
@@ -10471,7 +10471,7 @@
         <seg id="10">In July, a scandal broke out in Russia over the overly complex Unified State Exam in Chemistry.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Russian record.</seg>
         <seg id="2">The schoolboy passed the USE for 400 points</seg>
@@ -10631,7 +10631,7 @@
         <seg id="4">Forecasters also predict variable clouds and light rains.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Up to 28 degrees is expected in Moscow next week</seg>
         <seg id="2">Next week, the air temperature in Moscow will return to normal, RT reports.</seg>
@@ -10741,7 +10741,7 @@
         <seg id="5">Of these, 7.3% are children.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Moscow has a negative average daily growth rate of new COVID-19 cases over the month</seg>
         <seg id="2">The headquarters for the control and monitoring of the coronavirus situation in Moscow reports that 683 new cases of coronavirus infection have been confirmed in the capital.</seg>
@@ -10920,7 +10920,7 @@
         <seg id="20">Travel to Kronstadt this year was limited for the duration of the parade due to the prevention of the spread of the coronavirus COVID-19, RIA Novosti reports.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The main naval parade was marked by new ships and shooting technologies</seg>
         <seg id="2">At the Main Naval Parade in Saint Petersburg, a new shooting technology was applied: a video camera "passed" under one of the ships, showing it "from the inside."</seg>
@@ -11182,7 +11182,7 @@
         <seg id="7">Protesters staged riots and police were forced to use tear gas and stun grenades.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">One person killed during protests in the United States</seg>
         <seg id="2">Protests took place in Seattle, Portland, Louisville and Denver, the "Actual Camera" reported on Sunday.</seg>
@@ -11355,7 +11355,7 @@
         <seg id="14">The rest of the political organizations, judging by the poll, will not yet be able to overcome the 5 percent electoral barrier.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Poll: Lithuania's ruling Union of Farmers and Greens again tops party ratings</seg>
         <seg id="2">The Union of Peasants and Greens of Lithuania, which heads the ruling coalition of the Seimas, headed the rating of parties.</seg>
@@ -11567,7 +11567,7 @@
         <seg id="8">Putin also stressed that naval sailors perform the most difficult tasks with dignity, serving the Fatherland impeccably.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Putin spoke about the unique advantages of the Russian fleet</seg>
         <seg id="2">Russian President Vladimir Putin said at the main naval parade in Saint Petersburg that the unique advantages and increased combat capabilities of the Russian fleet will be achieved through the introduction of advanced digital technologies.</seg>
@@ -11721,7 +11721,7 @@
         <seg id="7">On July 24, the Ministry of Emergency Situations also warned residents of the Moscow region about the threat.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The Emergencies Ministry has warned residents of the Moscow region about a thunderstorm</seg>
         <seg id="2">Thunderstorms and winds are expected in the Moscow region with gusts of up to 15 m / s. The regional department of the Ministry of Emergency Situations reported this on Sunday, July 26.</seg>
@@ -11886,7 +11886,7 @@
         <seg id="12">"The adoption of the document will eliminate the arbitrary establishment by customers of requirements for the composition and content of applications of participants who are subjects of small and medium-sized businesses," the explanatory note says.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Unnecessary requirements for public procurement applications will be eliminated by law</seg>
         <seg id="2">The law may establish exhaustive requirements for applications to participate in the procurement.</seg>
@@ -12137,7 +12137,7 @@
         <seg id="31">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">As an artist, the relationship is very important to me.</seg>
         <seg id="2">In my works I try to show that people are inseparable from nature and that everything is interconnected.</seg>
@@ -12622,7 +12622,7 @@
         <seg id="52">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">One winter morning a few years ago, I was driving to work in Johannesburg, South Africa, and noticed a fog looming over the city.</seg>
         <seg id="2">I drive there almost every day, so I wouldn't have noticed it before.</seg>
@@ -13180,7 +13180,7 @@
         <seg id="9">According to analysts, US GDP in the second quarter of 2020 will fall by 25% in annual terms, which will be the strongest decline in the country's history.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Republicans will offer another 1 trillion to support the U.S. economy</seg>
         <seg id="2">Republicans will propose spending another 1 trillion to support the United States economy, U.S. Treasury Secretary Steven Mnuchin confirmed on Sunday, July 26, on Fox News.</seg>
@@ -13355,7 +13355,7 @@
         <seg id="10">The difficulties were not related to the connection itself, but to the status of the connection.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Microsoft will forcibly update older versions of Windows 10</seg>
         <seg id="2">Microsoft has confirmed the transition to the next stage of distribution of the May 2020 Update for the Windows 10 operating system, writes the BetaNews portal on July 25.</seg>
@@ -13543,7 +13543,7 @@
         <seg id="11">The doctor explained that sugar itself is not dangerous to health, dessert will become harmful only when there is such food in large quantities, and candy at night, according to him, is not the worst snack.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Dr Myasnikov named the main indicators of human health</seg>
         <seg id="2">In the "deadly quartet," one of the main criteria turned out to be excess of waist volume</seg>
@@ -13720,7 +13720,7 @@
         <seg id="6">Rustam Fatkhutdinov became the best in the SMP RSKG Trophy, Lev Tolkachev and Pavel Yashin became the winners.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Igor Drive has determined the winners in Turing and Super Production</seg>
         <seg id="2">At the Igora Drive autodrome, where the main stage of the Russian series of circuit races takes place, the Touring and Super Production competitions have ended.</seg>
@@ -13892,7 +13892,7 @@
         <seg id="16">According to media reports, the man may have approached the car with a rifle when he was shot.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The documentary, "John Lewis: Good Trouble," was released online.</seg>
         <seg id="2">The film-biography, which was supposed to be a kind of visual greeting to Congressman John Lewis, who celebrated his 80th birthday at the beginning of the year, became a full-fledged epitaph.</seg>
@@ -14126,7 +14126,7 @@
         <seg id="9">Prior to that, Pompeo headed the Central Intelligence Agency (CIA).</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">US experts call Pompeo the worst secretary of state in the country's history</seg>
         <seg id="2">International affairs experts Aaron David Miller and Richard Sokolski have named Mike Pompeo the worst secretary of state in the history of the United States.</seg>
@@ -14289,7 +14289,7 @@
         <seg id="7">Eyewitnesses claim that the driver of the foreign car was drunk.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Tikhoretsk, a foreign car drove into a store</seg>
         <seg id="2">Today, on July 26, in Tikhoretsk, on Menshikov Street, a Land Cruiser SUV drove at speed into the shopping area of a chain supermarket.</seg>
@@ -14789,7 +14789,7 @@
         <seg id="129">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Do you know how many species of flowering plants exist?</seg>
         <seg id="2">A quarter of a million - at least those we know - a quarter of a million species of flowering plants.</seg>
@@ -16024,7 +16024,7 @@
         <seg id="5">The committee today issued flood alerts on a section of the upper Yangtze River and overflow of the Sanxia HPP reservoir.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In China, the third flood in a year occurred on the Yangtze River</seg>
         <seg id="2">After heavy rainfall in the upper reaches of the Yangtze River, the longest waterway in China, flooding occurred for the third time in a year.</seg>
@@ -16368,7 +16368,7 @@
         <seg id="83">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">My job is to help computers communicate about the world around them.</seg>
         <seg id="2">There are many ways to do this, but I like to help computers talk about what they see and understand.</seg>
@@ -17185,7 +17185,7 @@
         <seg id="4">In total, the total number of confirmed cases of the new coronavirus infection in the region is 9,469.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Almost 9,500 cases of CoViD-19 infection have been recorded in the Arctic</seg>
         <seg id="2">158 new cases of coronavirus infection have been identified in Murmansk region.</seg>
@@ -17295,7 +17295,7 @@
         <seg id="5">First of all, Vladimir Vasilyev noted that now the construction of these sports facilities is also a tribute to the memory of the great coach.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The head of Dagestan discussed with Khabib Nurmagomedov the construction of several sports facilities.</seg>
         <seg id="2">The head of Dagestan Vladimir Vasilyev held a meeting with the current UFC lightweight champion Khabib Nurmagomedov, the website of the head of the republic reports.</seg>
@@ -17446,7 +17446,7 @@
         <seg id="13">Doctors took tests from the baby to make sure he was healthy and unhurt.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The father of the baby kidnapped in Salsk revealed details of the incident</seg>
         <seg id="2">The father of the newborn, who was abducted from a maternity hospital in Salsk, Rostov region, revealed the details of the incident.</seg>
@@ -17645,7 +17645,7 @@
         <seg id="7">Three people died.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Four killed in a plane crash in the Swiss Alps</seg>
         <seg id="2">Four tourists died as a result of a small plane crash in the Swiss canton of Valais, ANSA reported on Saturday, July 25.</seg>
@@ -17794,7 +17794,7 @@
         <seg id="8">Earlier, Tyazhelnikov named several differences between influenza and coronavirus.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Expert assessed the role of vitamins in the formation of immunity</seg>
         <seg id="2">Chief freelance specialist in primary health care for adults at the Moscow Department of Healthcare, Andrei Tyazhelnikov, assessed the role of vitamins in the formation of immunity.</seg>
@@ -17952,7 +17952,7 @@
         <seg id="8">Globally, more than 644,000 people have died from coronavirus, and more than 9.2 million have been cured.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Russia, 5,765 COVID-19 patients were registered per day</seg>
         <seg id="2">In Russia, 5,765 new cases of coronavirus infection were detected over the course of a day by July 26, according to the website stopcoronavirus.rf, according to data from the Federal Operational Headquarters.</seg>
@@ -18174,7 +18174,7 @@
         <seg id="24">The head of the region instructed the acting minister of agriculture to go to the site, study the structure of milk sales, analyze the experience of other territories and determine options for solving the problem.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The head of the region, Igor Kobzev, met with the mayors of the Ust-Orda Buryat district</seg>
         <seg id="2">During the workshop, which took place today, July 24, the government of Irkutsk region discussed the main directions for the development of remote agricultural areas.</seg>
@@ -18472,7 +18472,7 @@
         <seg id="7">The third was Ivan Pugachev, who played five positions.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Kuzminov won two races of the second stage of the SMP RSKG at Igora Drive.</seg>
         <seg id="2">The second race of the second stage of the RSCG SMP championship took place at Igora Drive.</seg>
@@ -18669,7 +18669,7 @@
         <seg id="20">"There was such an idea - to create a museum for the recultivation of landfills near Moscow," said Deputy Prime Minister - Minister of Ecology and Natural Resources of the region Dmitry Kurakin.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Moscow region authorities told about the fate of closed landfills</seg>
         <seg id="2">In the Moscow region, solid waste landfills continue to be closed.</seg>
@@ -18939,7 +18939,7 @@
         <seg id="9">More about the situation - in Kommersant's article, "Israel is waiting for Hezbollah's revenge."</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Israel reports drone crash in southern Lebanon</seg>
         <seg id="2">An Israeli army unmanned aerial vehicle crashed in southern Lebanon.</seg>
@@ -19126,7 +19126,7 @@
         <seg id="13">"There is really something for the head to do, than to go out and communicate with those who shout under the windows," the acting governor said.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Furgal's replacement first came out to the protesters</seg>
         <seg id="2">The acting governor of Khabarovsk Krai, Mikhail Degtyarev, for the first time since his appointment, took part in protests in support of the arrested former head of the region, Sergei Furgal.</seg>
@@ -19503,7 +19503,7 @@
         <seg id="70">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Today I would like to show you how we will do different things in the future.</seg>
         <seg id="2">I believe that soon our buildings and machines will be self-assembling, will reproduce and repair themselves.</seg>
@@ -20223,7 +20223,7 @@
         <seg id="9">The team scored 21 points in 38 rounds and took the last, 20th place.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">"Manchester City" beat the worst team of the APL and won the fifth victory in a row</seg>
         <seg id="2">Manchester City defeated Norwich in the 38th round of the English Premier League (APL).</seg>
@@ -20406,7 +20406,7 @@
         <seg id="12">The previous record was 247,225 infected.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The number of deaths from coronavirus in the world exceeds 640,000</seg>
         <seg id="2">More than 15.7 million people are infected</seg>
@@ -20584,7 +20584,7 @@
         <seg id="4">One of those who prepared the treaty was Cardinal Pacelli, who, six years before the outbreak of World War II, became Pontiff Pius XII.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">what linked the Vatican and Nazi Germany</seg>
         <seg id="2">This week, another date is the 87th anniversary of the signing of the treaty between the Vatican and Nazi Germany.</seg>
@@ -20694,7 +20694,7 @@
         <seg id="5">Rescue assistance was needed to retrieve the body of the deceased.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Sochi, a dump truck body collapsed onto a truck's cabin, killing the driver.</seg>
         <seg id="2">Footage of an accident that occurred last Saturday, July 25, at a construction site in Sochi has appeared online.</seg>
@@ -20889,7 +20889,7 @@
         <seg id="24">We are koloboks, not sullen stones.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Beautiful high minarets only decorated Ayia Sofia</seg>
         <seg id="2">Once again, about Hagia Sophia, there was a text by Fr. Vladimir elinsky, which, they say, should be protested.</seg>
@@ -21191,7 +21191,7 @@
         <seg id="8">Atmospheric pressure will rise during the day.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The working week in Saint Petersburg will begin with warm and dry weather</seg>
         <seg id="2">On Monday, July 27, it will be cloudy in Saint Petersburg, with no precipitation expected.</seg>
@@ -21361,7 +21361,7 @@
         <seg id="11">On June 24, updated infantry fighting vehicles BMP-2M with the Berezhok combat module also passed through Red Square for the first time.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">During the broadcast of the parade on Navy Day, the camera "passed under the ship"</seg>
         <seg id="2">Also on Victory Day, the camera flew through the barrel of a tank</seg>
@@ -21534,7 +21534,7 @@
         <seg id="5">47% of respondents also believe that the Kremlin interfered in the last general election in the UK in 2019.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Almost half of Britons believe in Kremlin interference in Brexit referendum</seg>
         <seg id="2">Almost half of Britons - 49 - believe that Russia tried to influence the course of the 2016 referendum on Britain's exit from the European Union.</seg>
@@ -21689,7 +21689,7 @@
         <seg id="14">And it will not do without rainfall.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">July will leave with heat, August will start with coolness</seg>
         <seg id="2">Over the weekend, Moscow and the region experienced the coldest night of July.</seg>
@@ -21945,7 +21945,7 @@
         <seg id="19">For parishioners, the cathedral was reopened only in 1985.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The native of Rwanda admitted that he set fire to the cathedral in Nantes</seg>
         <seg id="2">A native of Rwanda, who worked at the Cathedral of Saints Peter and Paul in the French city of Nantes on a voluntary basis, confessed to his arson a week after the fire.</seg>
@@ -22194,7 +22194,7 @@
         <seg id="6">He is the only professional player to have played in all six FIFA confederations, replacing more than 20 clubs, including representatives from the championships of Singapore, South Africa, New Zealand, Canada, Namibia and a number of other countries.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The legendary goalkeeper-traveler Pfannenstiel could become a scout for Inter.</seg>
         <seg id="2">Former German goalkeeper Lutz Pfannenstiel may enter the headquarters of Inter.</seg>
@@ -22529,7 +22529,7 @@
         <seg id="77">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">It is believed that only sighted people can drive a car.</seg>
         <seg id="2">Until recently, it was believed that safe and independent driving was an impossible task for a blind person.</seg>
@@ -23316,7 +23316,7 @@
         <seg id="10">Earlier, we wrote that Keanu Reeves would become a screenwriter for comics about the demigod Berserk.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Bill and Ted's second trailer with Keanu Reeves released</seg>
         <seg id="2">The second trailer for the third installment of the Bill Ted franchise has appeared on Orion Pictures' YouTube channel.</seg>
@@ -23876,7 +23876,7 @@
         <seg id="140">(Applause)</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">I want you to think for a moment that almost all of our knowledge about the universe comes from light.</seg>
         <seg id="2">We stand on Earth and see stars in the night sky with the naked eye.</seg>
@@ -25226,7 +25226,7 @@
         <seg id="9">This decision was made by the Minneapolis City Council in connection with the death of George Floyd and rallies against police brutality over the past two months.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Residents of Minneapolis create squads to patrol the streets</seg>
         <seg id="2">The Wall Street Journal reports that squads are being created in Minneapolis to patrol the streets.</seg>
@@ -25377,7 +25377,7 @@
         <seg id="4">The first modern Olympic Games were held in 1896 in Athens.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Original drawing of Olympic rings sold at auction for 185 thousand</seg>
         <seg id="2">The original drawing of the Olympic rings by the founder of the modern Olympic Games, Pierre de Coubertin, was sold at auction for 185,000.</seg>
@@ -25487,7 +25487,7 @@
         <seg id="5">Earlier, Moscow's Dynamo presented the form for the next season.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Dinamo will not renew its contract with Panchenko</seg>
         <seg id="2">Forward Kirill Panchenko will leave Dynamo Moscow due to the end of his contract.</seg>
@@ -25614,7 +25614,7 @@
         <seg id="7">The return match is scheduled for August 7.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">City and Real will be able to play the second leg of the 1 / 8 finals of the Champions League in Manchester</seg>
         <seg id="2">The British newspaper The Guardian reports that Manchester City and Real Madrid will still be able to play the second leg of the 1 / 8 finals of the Champions League in Manchester at the Etihad Stadium on August 7.</seg>
@@ -25763,7 +25763,7 @@
         <seg id="8">The July 22 agreement provides for a complete renunciation of all military actions, including reconnaissance, sending sabotage and reconnaissance groups, and sniper warfare.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Presidents of Russia and Ukraine discussed implementation of the ceasefire in Donbass</seg>
         <seg id="2">Russian President Vladimir Putin and Ukrainian President Volodymyr elensky discussed the implementation of the ceasefire agreements in Donbass, reached during the Normandy summit in December 2019, the press services of the Kremlin and the office of the President of Ukraine reported.</seg>
@@ -25929,7 +25929,7 @@
         <seg id="10">Oleg Tinkou underwent a bone marrow transplant at a London clinic.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Tinkov showed a video of a bone marrow transplant</seg>
         <seg id="2">Oleg Tinkov, a Russian entrepreneur and founder of the Tinkoff group, published a video in which he described how he was transplanted with a bone marrow.</seg>
@@ -26109,7 +26109,7 @@
         <seg id="9">Another Pantsir-C1 in Libya was destroyed by a drone strike in early July.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The destruction of Russian "Pantsirei" in Ethiopia became known</seg>
         <seg id="2">Two Russian-made Pantsir-S1 anti-aircraft missile and gun systems, which were in service with the Ethiopian army, were destroyed.</seg>
@@ -26264,7 +26264,7 @@
         <seg id="5">Only then will deminers start working.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Warsaw, 1.5 thousand people are evacuated because of a bomb</seg>
         <seg id="2">About 1,500 residents of Warsaw are being evacuated because of a bomb found during the construction of the metro, RIA Novosti reports, citing a representative of the capital's mayor's office, Karolina Galetskaya.</seg>
@@ -26387,7 +26387,7 @@
         <seg id="6">Earlier, the media named Miranchuk's wishes under a contract with Serie A clubs.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Lokomotiv is close to signing a contract with a Belarusian national football player</seg>
         <seg id="2">Shakhtar and Belarus national football team striker Vitaly Lisakovich is preparing to move to Lokomotiv Moscow.</seg>
@@ -26535,7 +26535,7 @@
         <seg id="10">It involves more than 4 thousand military personnel, 46 ships, submarines and boats, as well as naval aviation.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Putin spoke with Shoigu in the cabin:</seg>
         <seg id="2">Russian President Vladimir Putin spoke with the head of the Defense Ministry, Sergei Shoigu, and the commander-in-chief of the Navy, Nikolai Yevmenov.</seg>
@@ -26731,7 +26731,7 @@
         <seg id="13">Residents of Tyumen district celebrate the Year of Memory and Glory online</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A call to take part in the "Buy from my grandmother" campaign appeared in one of the Tyumen publics.</seg>
         <seg id="2">The organizers are urging them to buy vegetables, flowers and berries from grandmothers, which they grew in their gardens, and not to bargain.</seg>
@@ -26938,7 +26938,7 @@
         <seg id="9">Later, at the sight of police officers who came to remove the intruder from the plane, the debosher staged a scandal and tore up his passport.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The plane made an emergency landing in Irkutsk</seg>
         <seg id="2">In Irkutsk, an airplane flying from Moscow to Ulan-Ude made an emergency landing because of a smoked passenger.</seg>
@@ -27101,7 +27101,7 @@
         <seg id="7">After the parade in Kronstadt, Putin will host the Main Naval Parade in the waters of the Neva.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Putin arrives in Saint Petersburg for the main parade of the Russian Navy</seg>
         <seg id="2">The president went on a boat to a parade of ships in the Gulf of Finland</seg>
@@ -27234,7 +27234,7 @@
         <seg id="4">The exhibition presents photographs, documents, posters and paintings from the life of the famous naval commander.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Exposition in honor of Navy Day opened in the regional museum of local history</seg>
         <seg id="2">The exhibition in honor of the Day of the Russian Navy opened in the Murmansk Regional Museum of Local History.</seg>
@@ -27348,7 +27348,7 @@
         <seg id="6">Currently, 16 clubs play in the RPL, but the option of increasing the number of teams to 18 was considered.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The decision to expand the RPL would not be supported by either UEFA or FIFA</seg>
         <seg id="2">The president of the Russian Football Union (RFU), Alexander Dyukov, believes that expanding the Russian Premier League (RPL) to 18 teams is not right at the moment.</seg>
@@ -27484,7 +27484,7 @@
         <seg id="7">At the same time, on July 24, Russian Prime Minister Mikhail Mishustin announced the opening of flights with a number of countries from August 1.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">More than a hundred Russians returned home from Yerevan on export flights</seg>
         <seg id="2">More than a hundred Russians, who could not leave Armenia amid the spread of the coronavirus, returned home on export flights.</seg>
@@ -27677,7 +27677,7 @@
         <seg id="19">Earlier it was reported that Kirilenko will put forward his candidacy for the election of the head of the RFB.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Kirilenko shared memories of playing with Bryant and Jordan in the NBA</seg>
         <seg id="2">The head of the Russian Basketball Federation (RFB), Andrei Kirilenko, shared memories of his games against the legendary Kobe Bryant and Michael Jordan in matches of the National Basketball Association (NBA).</seg>
@@ -27938,7 +27938,7 @@
         <seg id="9">The Khabarovsk Territory has been acquiring gas from this project since 2005.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Degtyarev was surprised by information about the purchase of Sakhalin-1 gas in dollars</seg>
         <seg id="2">The acting governor of Khabarovsk Krai, Mikhail Degtyarev, on Sunday, July 26, during a meeting with residents of Sovetskaya Gavan, was surprised that the region was buying Sakhalin gas produced by the American company Exxon Neftegas for dollars.</seg>
@@ -28105,7 +28105,7 @@
         <seg id="8">Earlier it was reported: two buses collided in Kuzbass, three people were injured.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Forecasters spoke about the weather in Moscow on July 26</seg>
         <seg id="2">On Sunday, July 26, short-term rains, thunderstorms and up to 25 degrees Celsius are expected in Moscow.</seg>
@@ -28247,7 +28247,7 @@
         <seg id="4">On July 25, Zenit beat Khimki (1: 0) in Yekaterinburg and won the National Cup.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The leader of the "Hands Up" group suggested that Dzyuba sing a duet.</seg>
         <seg id="2">The singer of the group "Hands Up" and a CSKA fan, Sergei hukov, reacted to the song by the forward of "enit" Artem Dzyuba.</seg>
@@ -28393,7 +28393,7 @@
         <seg id="14">The comedy drama "Chicky" tells about three prostitutes who started a new life and opened a business on the advice of a girlfriend.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">The actor of the Russian TV series responded to accusations of "propaganda of LGBT and feminism"</seg>
         <seg id="2">The actor of the Russian TV series "Chiki," whose creators were accused of "promoting LGBT and feminism," responded to the complaints about the film.</seg>
@@ -28605,7 +28605,7 @@
         <seg id="8">The Pole scored 10 goals and made 5 assists in 33 matches of the season.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">National treasure.</seg>
         <seg id="2">Krykhovyak admired the beauty of Kamchatka.</seg>
@@ -28763,7 +28763,7 @@
         <seg id="8">You can submit your request by e-mail: str @ krd.ru, as well as by regular letter to the address: 350000, Krasnodar, Krasnaya Street, 122.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">In Krasnodar, "round tables" will be organized with the developers of the city master plan</seg>
         <seg id="2">Meetings with the creators of the General Plan will be held in the format of a "round table" in all inner-city districts of Krasnodar.</seg>
@@ -28941,7 +28941,7 @@
         <seg id="13">Chechen militant sentenced to 10 years in prison for terrorism and attacks on Russian military</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">A woman threw her husband's body into a pit and poured concrete near Belgorod</seg>
         <seg id="2">In the Belgorod region, a woman confessed to the murder of her own husband, whom she threw into a waste pit and poured concrete into, according to the website of the regional administration of the IC of the Russian Federation.</seg>
@@ -29172,7 +29172,7 @@
         <seg id="15">According to the artist, he adjusted his diet and was actively engaged in running.</seg>
       </p>
     </hyp>
-  <hyp system="Nemo" lang="en">
+  <hyp system="NVIDIA-NeMo" lang="en">
       <p>
         <seg id="1">Singer Polina Gagarina named weight loss products</seg>
         <seg id="2">Russian singer Polina Gagarina named five products that helped her adjust her figure and subsequently not gain weight again.</seg>
