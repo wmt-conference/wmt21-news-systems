@@ -1,6 +1,6 @@
 # WMT21 News Systems and Evaluations
 
-This repository contains lll primary submissions for WMT21 news task, and the human evaluations.
+This repository contains all primary submissions for the WMT21 news task, and the human evaluations.
 The submissions are in the following directories
 
 * `xml` : One xml file for each language pair, containing source, reference(s) and hypotheses
