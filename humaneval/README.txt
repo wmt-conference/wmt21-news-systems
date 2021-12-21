@@ -48,7 +48,8 @@ The following directory contains human evaluation data collected by Facebook:
 facebook-wikipedia-2021
 
 
-
+The following directory contains the out-of-English and fr-de evaluation:
+newstest2021-EX_and_XY
 
 
 
