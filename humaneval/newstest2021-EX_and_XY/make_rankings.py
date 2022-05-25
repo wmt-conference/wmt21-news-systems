@@ -22,14 +22,15 @@ def main():
 
 
   # Compute means, by first computing a segment mean, then mean across all segments (for a system-LP combo)
-  mean_scores = scores.groupby(["system", "segment",  "source", "target"])[["score", "z"]].mean().reset_index()
-  mean_scores = mean_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
-  mean_scores.sort_values(by = ["source", "target", "z"], ascending = False, inplace=True)
-  mean_scores['score'] = mean_scores['score'].map('{:,.2f}'.format)
-  mean_scores['z'] = mean_scores['z'].map('{:,.3f}'.format)
-  mean_scores.to_csv(sys.stdout, sep="\t")
+  segment_scores = scores.groupby(["system", "segment",  "source", "target"])[["score", "z"]].mean().reset_index()
+  system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
 
 
+  # outputs 
+  system_scores.sort_values(by = ["source", "target", "z"], ascending = False, inplace=True)
+  system_scores['score'] = system_scores['score'].map('{:,.2f}'.format)
+  system_scores['z'] = system_scores['z'].map('{:,.3f}'.format)
+  system_scores.to_csv(sys.stdout, sep="\t")
 
 if __name__ == "__main__":
   main()
