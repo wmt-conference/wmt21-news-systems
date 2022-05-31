@@ -5,11 +5,17 @@
 # This is not the actual script used for the paper, but does create the same scores and rankings
 #
 
+import argparse
 import pandas
 import sys
 
 
 def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument("-s", "--segment", default=False,  action="store_true",
+    help = "Output segment-level scores (not system level)")
+  args = parser.parse_args()
+  
   scores = pandas.read_csv("wmt21filtered.20210930.csv", header = None,
     names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", 8, 9, 10])
   scores = scores[scores['class'] == 'TGT']
@@ -27,10 +33,13 @@ def main():
 
 
   # outputs 
-  system_scores.sort_values(by = ["source", "target", "z"], ascending = False, inplace=True)
-  system_scores['score'] = system_scores['score'].map('{:,.2f}'.format)
-  system_scores['z'] = system_scores['z'].map('{:,.3f}'.format)
-  system_scores.to_csv(sys.stdout, sep="\t")
+  if args.segment:
+    segment_scores.to_csv(sys.stdout, sep="\t")
+  else:
+    system_scores.sort_values(by = ["source", "target", "z"], ascending = False, inplace=True)
+    system_scores['score'] = system_scores['score'].map('{:,.2f}'.format)
+    system_scores['z'] = system_scores['z'].map('{:,.3f}'.format)
+    system_scores.to_csv(sys.stdout, sep="\t")
 
 if __name__ == "__main__":
   main()
