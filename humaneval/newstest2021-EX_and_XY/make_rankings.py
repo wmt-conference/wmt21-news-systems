@@ -2,7 +2,8 @@
 
 #
 # Calculate the rankings, as shown in the overview paper.
-# This is not the actual script used for the paper, but does create the same scores and rankings
+# This is not the actual script used for the paper, but it creates the same scores
+# as used in the updated version of the overview paper.
 #
 
 import argparse
@@ -28,12 +29,15 @@ def main():
 
 
   # Compute means, by first computing a segment mean, then mean across all segments (for a system-LP combo)
-  segment_scores = scores.groupby(["system", "segment",  "source", "target"])[["score", "z"]].mean().reset_index()
+  # Note that removing "doc" from the following line reproduces the (incorrect) scores from
+  # the first version of the paper
+  segment_scores = scores.groupby(["system", "segment", "doc",  "source", "target"])[["score", "z"]].mean().reset_index()
   system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
 
 
   # outputs 
   if args.segment:
+    segment_scores.sort_values(by = ["source", "target", "system",  "doc"], ascending = False, inplace=True)
     segment_scores.to_csv(sys.stdout, sep="\t")
   else:
     system_scores.sort_values(by = ["source", "target", "z"], ascending = False, inplace=True)
