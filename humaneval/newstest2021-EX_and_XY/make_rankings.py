@@ -15,9 +15,14 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("-s", "--segment", default=False,  action="store_true",
     help = "Output segment-level scores (not system level)")
+  parser.add_argument("-c", "--contrastive", default=False,  action="store_true",
+    help = "Compute the rankings with the contrastive assessments (as opposed to the regular DA assessments)")
   args = parser.parse_args()
   
-  scores = pandas.read_csv("wmt21filtered.20210930.csv", header = None,
+  csv_file = "wmt21-regular.20210930.csv"
+  if args.contrastive:
+    csv_file = "wmt21-contrastive.20211109.csv"
+  scores = pandas.read_csv(csv_file, header = None,
     names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", 8, 9, 10])
   scores = scores[scores['class'] == 'TGT']
 
@@ -31,7 +36,7 @@ def main():
   # Compute means, by first computing a segment mean, then mean across all segments (for a system-LP combo)
   # Note that removing "doc" from the following line reproduces the (incorrect) scores from
   # the first version of the paper
-  segment_scores = scores.groupby(["system", "segment", "doc",  "source", "target"])[["score", "z"]].mean().reset_index()
+  segment_scores = scores.groupby(["system", "segment", "doc", "source", "target"])[["score", "z"]].mean().reset_index()
   system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
 
 
