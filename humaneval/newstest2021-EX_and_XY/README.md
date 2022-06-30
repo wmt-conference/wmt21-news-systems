@@ -44,6 +44,7 @@ All annotations are collected in file `wmt21-regular.20210930.csv`. The column n
  * Score
  * Annotation Start
  * Annotation End
+ * Barch ID - sentences with the same batch has been evaluated in contrastive manner, where user saw both translations next to each other (score is copied for equal translations)
  * Position of annotation - was the sentence shown as first or second on the screen
  * Source
  * Translation
