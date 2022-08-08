@@ -10,6 +10,8 @@ import argparse
 import pandas
 import sys
 
+def output_counts(scores):
+  pass
 
 def main():
   parser = argparse.ArgumentParser()
@@ -17,6 +19,8 @@ def main():
     help = "Output segment-level scores (not system level)")
   parser.add_argument("-c", "--contrastive", default=False,  action="store_true",
     help = "Compute the rankings with the contrastive assessments (as opposed to the regular DA assessments)")
+  parser.add_argument("-t", "--totals", default=False, action="store_true",
+    help = "Output total numbers of systems and judgements, rather than scores")
   args = parser.parse_args()
   
   csv_file = "wmt21-regular.20210930.csv"
@@ -26,6 +30,8 @@ def main():
     names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", 8, 9, 10])
   scores = scores[scores['class'] == 'TGT']
 
+  if args.totals:
+    output_counts(scores)
 
   # To compute z-scores, we need mean and std dev for each annotator-language_pair combination
   meanstds = scores.groupby(["annotator", "source", "target"])["score"].agg(["mean", "std"]).reset_index()
