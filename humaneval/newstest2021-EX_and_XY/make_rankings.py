@@ -5,6 +5,11 @@
 # This is not the actual script used for the paper, but it creates the same scores
 # as used in the updated version of the overview paper.
 #
+# To reproduce the scores from the updated version, use the -d -z arguments. This 
+# will be fixed in a further update to the paper. In other words, the paper should
+# be updated so that it alignes with the script results, when the script is run
+# without arguments.
+#
 
 import argparse
 import pandas
@@ -21,12 +26,25 @@ def output_counts(scores):
 
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("-s", "--segment", default=False,  action="store_true",
-    help = "Output segment-level scores (not system level)")
   parser.add_argument("-c", "--contrastive", default=False,  action="store_true",
     help = "Compute the rankings with the contrastive assessments (as opposed to the regular DA assessments)")
+
+  parser.add_argument("-s", "--segment", default=False,  action="store_true",
+    help = "Output segment-level scores (not system level)")
   parser.add_argument("-t", "--totals", default=False, action="store_true",
     help = "Output total numbers of systems and judgements, rather than scores")
+
+  # Document-level scores are different from segment-level scores, so it is recommended
+  # that they are not averaged together. Also, the document level scores may have been 
+  # mixed with bad reference scores.
+  parser.add_argument("-d", "--include-doc-scores", default=False, action="store_true",
+    help = "Include document-level judgements")
+
+  # Annotators with zero standard deviation are unreliable, and cannot be normalised reliably
+  # so we exclude by default.
+  parser.add_argument("-z", "--include-zero-std-annotators", default=False, action="store_true",
+    help = "Include annotators with zero standard deviation")
+
   args = parser.parse_args()
   
   csv_file = "wmt21-regular.20210930.csv"
@@ -36,6 +54,10 @@ def main():
     names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", "doc_score", 9, 10])
   scores = scores[scores['class'] == 'TGT']
 
+  # Remove doc scores
+  if not args.include_doc_scores:
+    scores  = scores[scores['doc_score'] == False]
+
   if args.totals:
     output_counts(scores)
     sys.exit(0)
@@ -43,6 +65,11 @@ def main():
   # To compute z-scores, we need mean and std dev for each annotator-language_pair combination
   meanstds = scores.groupby(["annotator", "source", "target"])["score"].agg(["mean", "std"]).reset_index()
   scores = pandas.merge(scores, meanstds, on = ["annotator", "source", "target"])
+
+  # Remove any annotators with zero mean and standard deviation across the pair
+  if not args.include_zero_std_annotators:
+    scores = scores[scores['std'] > 0]
+
   scores['z'] = (scores['score'] - scores['mean']) / scores['std']
 
 
