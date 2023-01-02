@@ -11,7 +11,13 @@ import pandas
 import sys
 
 def output_counts(scores):
-  pass
+  totals = scores.groupby(["source", "target"])['system'].count().reset_index()
+  systems= scores.groupby(["source", "target"])['system'].nunique().reset_index()
+  totals.rename(columns = {'system' : 'annotations'}, inplace=True)
+  totals = totals.merge(systems, on = ['source', 'target'])
+  totals['mean'] = totals['annotations'] / totals['system']
+  #print(totals)
+  print(totals)
 
 def main():
   parser = argparse.ArgumentParser()
@@ -27,11 +33,12 @@ def main():
   if args.contrastive:
     csv_file = "wmt21-contrastive.20211109.csv"
   scores = pandas.read_csv(csv_file, header = None,
-    names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", 8, 9, 10])
+    names = ["annotator", "system", "segment", "class", "source", "target", "score", "doc", "doc_score", 9, 10])
   scores = scores[scores['class'] == 'TGT']
 
   if args.totals:
     output_counts(scores)
+    sys.exit(0)
 
   # To compute z-scores, we need mean and std dev for each annotator-language_pair combination
   meanstds = scores.groupby(["annotator", "source", "target"])["score"].agg(["mean", "std"]).reset_index()
