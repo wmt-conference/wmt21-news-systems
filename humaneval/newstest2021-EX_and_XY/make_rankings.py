@@ -24,7 +24,7 @@ LANG_CODES = {
   "isl" : "Icelandic",
   "zho" : "Chinese",
   "jpn" : "Japanese",
-  "ces" : "Chinese",
+  "ces" : "Czech",
   "rus" : "Russian",
   "hau" : "Hausa",
 
@@ -144,7 +144,7 @@ def main():
         min_wins_current_cluster = min(row.wins, min_wins_current_cluster)
         remaining = system_count - (i +1)
         add_cluster_boundary = False
-        # We declare a cluster boundary if this system as a win count
+        # We declare a cluster boundary if this system has a win count
         # equal to the number of remaining systems.
         if min_wins_current_cluster == remaining:
           print('-' * 80)
