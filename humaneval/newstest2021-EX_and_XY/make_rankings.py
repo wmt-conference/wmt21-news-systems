@@ -95,14 +95,25 @@ def main():
 
   # Computation of wins and losses using Mann-Whitney (aka Wilcoxon sum-ranks)
 
-  # To calculate this, we need a table with tuples of (source, target, system-A, system-B, doc, segment, mean-score-A, mean-score-B)
+  # To calculate this, we need a table with tuples of 
+  # (source, target, system-A, system-B, doc, segment, mean-score-A, mean-score-B)
+  # We are comparing only on matched segments (this is done in appraise)
   segment_pair_scores = pandas.merge(segment_scores, segment_scores, on = ["source", "target", "segment", "doc"])
   # we do not compare systems to themselves, but do make both pairwise comparisons. Inefficient, but simpler.
   segment_pair_scores = segment_pair_scores[segment_pair_scores['system_x'] !=  segment_pair_scores['system_y']]
   comparisons = segment_pair_scores.groupby(["source", "target", "system_x", "system_y"])\
     [["z_x", "z_y"]].\
     apply(lambda t: mannwhitneyu(t.z_x, t.z_y, alternative="greater").pvalue).reset_index()
-  comparisons['win'] = comparisons[0] < 0.05
+    
+  # In the Appraise calculations, we only allow system A to win over system B, if system A has a higher
+  # z-score than system B, and is significantly better in the mann-whitney test. Because we are only calculating
+  # Mann Whitney on a subset of segments, it is possible to have a lower z, but still win on Mann Whitney
+  system_pair_scores = pandas.merge(system_scores.reset_index(), system_scores.reset_index(), on = ["source", "target"])
+  system_pair_scores['z_win'] = system_pair_scores['z_x'] > system_pair_scores['z_y']
+  comparisons = pandas.merge(comparisons, system_pair_scores, on = ["source", "target", "system_x", "system_y"])
+  comparisons['win'] = (comparisons[0] < 0.05) & (comparisons['z_win'])
+  
+  # Count wins and losses, then add to the system_scores table
   win_counts = comparisons.groupby(["source", "target", "system_x"])['win'].sum().reset_index()
   loss_counts = comparisons.groupby(["source", "target", "system_y"])['win'].sum().reset_index()
   system_scores = pandas.merge(system_scores, win_counts,
