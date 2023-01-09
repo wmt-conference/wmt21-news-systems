@@ -39,6 +39,80 @@ def output_counts(scores):
   #print(totals)
   print(totals)
 
+def add_wins_losses_matched(segment_scores, system_scores):
+  """Use the Mann-Whiteny (Wilcoxon sum-ranks) to calculate wins and losses for systems. This
+   version uses the matched segments, as in Appraise"""
+  # To calculate this, we need a table with tuples of 
+  # (source, target, system-A, system-B, doc, segment, mean-score-A, mean-score-B)
+  segment_pair_scores = pandas.merge(segment_scores, segment_scores, on = ["source", "target", "segment", "doc"])
+  # we do not compare systems to themselves, but do make both pairwise comparisons. Inefficient, but simpler.
+  segment_pair_scores = segment_pair_scores[segment_pair_scores['system_x'] !=  segment_pair_scores['system_y']]
+  comparisons = segment_pair_scores.groupby(["source", "target", "system_x", "system_y"])\
+    [["z_x", "z_y"]].\
+    apply(lambda t: mannwhitneyu(t.z_x, t.z_y, alternative="greater").pvalue).reset_index()
+    
+  # In the Appraise calculations, we only allow system A to win over system B, if system A has a higher
+  # z-score than system B, and is significantly better in the mann-whitney test. Because we are only calculating
+  # Mann Whitney on a subset of segments, it is possible to have a lower z, but still win on Mann Whitney
+  system_pair_scores = pandas.merge(system_scores.reset_index(), system_scores.reset_index(), on = ["source", "target"])
+  system_pair_scores['z_win'] = system_pair_scores['z_x'] > system_pair_scores['z_y']
+  comparisons = pandas.merge(comparisons, system_pair_scores, on = ["source", "target", "system_x", "system_y"])
+  comparisons['win'] = (comparisons[0] < 0.05) & (comparisons['z_win'])
+  
+  # Count wins and losses, then add to the system_scores table
+  win_counts = comparisons.groupby(["source", "target", "system_x"])['win'].sum().reset_index()
+  loss_counts = comparisons.groupby(["source", "target", "system_y"])['win'].sum().reset_index()
+  system_scores = pandas.merge(system_scores, win_counts,
+    left_on = ["source", "target", "system"],
+    right_on = ["source", "target", "system_x"],
+  )
+  system_scores = pandas.merge(system_scores, loss_counts,
+    left_on = ["source", "target", "system_x"],
+    right_on = ["source", "target", "system_y"],
+  )
+  system_scores.rename(columns = {'system_y': "system", "win_x":  "wins", "win_y": "losses"}, inplace=True)
+  del system_scores['system_x']
+  return system_scores
+
+def add_wins_losses_unmatched(segment_scores, system_scores):
+  """As in add_wins_losses_matched() but use all judgements for each system pair (not just matched)"""
+#     source target      score         z  wins      system  losses
+# 0    eng    hau  71.380258 -0.197747     1         AMU      10
+# 1    eng    isl  49.958291 -0.611475     1  Allegro.eu      10
+# 2    eng    deu  82.369249 -0.391847     0   BUPT_rush      17
+# 3    eng    jpn  79.499882  0.085110     8   BUPT_rush       7
+# 4    eng    zho  79.977509  0.071395    11   BUPT_rush       6
+   
+   # Not sure how to do this in pandas, so we build up the wins/losses outside pandas
+  segment_scores['key'] = segment_scores['doc'].str.cat(segment_scores['segment'].astype('str'), sep = "_")
+  min_prop = 1
+  min_prop_name = None
+  for pair, df in segment_scores.groupby(["source", "target"]):
+    systems = df['system'].unique()
+    wins = {s : 0 for s in systems}
+    loses = {s : 0 for s in systems}
+   
+    for i, system_x in enumerate(systems):
+      for system_y in systems[i+1:]:
+        print (pair, system_x, system_y)
+        keys_x = set(df[df.system == system_x]['key'].unique())
+        keys_y = set(df[df.system == system_y]['key'].unique())
+        intersect = len(keys_x.intersection(keys_y))
+        len_x = len(keys_x)
+        len_y = len(keys_y)
+        prop = min(intersect/len_x, intersect/len_y)
+        if prop < min_prop:
+          min_prop = prop
+          min_prop_name = (pair[0], pair[1], system_x, system_y) 
+        print(f"Intersect: {intersect}; len(x): {len_x}; len(y): {len_y}; prop: {prop}")
+        
+        z_x = df[df.system == system_x]['z']
+        z_y = df[df.system == system_y]['z']
+  print (min_prop)
+  print(min_prop_name)
+  sys.exit(0)
+
+
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("-c", "--contrastive", default=False,  action="store_true",
@@ -93,39 +167,10 @@ def main():
   system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
 
 
-  # Computation of wins and losses using Mann-Whitney (aka Wilcoxon sum-ranks)
+  system_scores = add_wins_losses_unmatched(segment_scores, system_scores)
+  print(system_scores.head())
+  sys.exit(0)
 
-  # To calculate this, we need a table with tuples of 
-  # (source, target, system-A, system-B, doc, segment, mean-score-A, mean-score-B)
-  # We are comparing only on matched segments (this is done in appraise)
-  segment_pair_scores = pandas.merge(segment_scores, segment_scores, on = ["source", "target", "segment", "doc"])
-  # we do not compare systems to themselves, but do make both pairwise comparisons. Inefficient, but simpler.
-  segment_pair_scores = segment_pair_scores[segment_pair_scores['system_x'] !=  segment_pair_scores['system_y']]
-  comparisons = segment_pair_scores.groupby(["source", "target", "system_x", "system_y"])\
-    [["z_x", "z_y"]].\
-    apply(lambda t: mannwhitneyu(t.z_x, t.z_y, alternative="greater").pvalue).reset_index()
-    
-  # In the Appraise calculations, we only allow system A to win over system B, if system A has a higher
-  # z-score than system B, and is significantly better in the mann-whitney test. Because we are only calculating
-  # Mann Whitney on a subset of segments, it is possible to have a lower z, but still win on Mann Whitney
-  system_pair_scores = pandas.merge(system_scores.reset_index(), system_scores.reset_index(), on = ["source", "target"])
-  system_pair_scores['z_win'] = system_pair_scores['z_x'] > system_pair_scores['z_y']
-  comparisons = pandas.merge(comparisons, system_pair_scores, on = ["source", "target", "system_x", "system_y"])
-  comparisons['win'] = (comparisons[0] < 0.05) & (comparisons['z_win'])
-  
-  # Count wins and losses, then add to the system_scores table
-  win_counts = comparisons.groupby(["source", "target", "system_x"])['win'].sum().reset_index()
-  loss_counts = comparisons.groupby(["source", "target", "system_y"])['win'].sum().reset_index()
-  system_scores = pandas.merge(system_scores, win_counts,
-    left_on = ["source", "target", "system"],
-    right_on = ["source", "target", "system_x"],
-  )
-  system_scores = pandas.merge(system_scores, loss_counts,
-    left_on = ["source", "target", "system_x"],
-    right_on = ["source", "target", "system_y"],
-  )
-  system_scores.rename(columns = {'system_y': "system", "win_x":  "wins", "win_y": "losses"}, inplace=True)
-  del system_scores['system_x']
 
   # outputs 
   if args.output_format == "segment":
