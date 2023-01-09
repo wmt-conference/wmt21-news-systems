@@ -29,6 +29,7 @@ LANG_CODES = {
   "hau" : "Hausa",
 
 }
+P_THRESH = 0.05
 
 def output_counts(scores):
   totals = scores.groupby(["source", "target"])['system'].count().reset_index()
@@ -57,8 +58,8 @@ def add_wins_losses_matched(segment_scores, system_scores):
   system_pair_scores = pandas.merge(system_scores.reset_index(), system_scores.reset_index(), on = ["source", "target"])
   system_pair_scores['z_win'] = system_pair_scores['z_x'] > system_pair_scores['z_y']
   comparisons = pandas.merge(comparisons, system_pair_scores, on = ["source", "target", "system_x", "system_y"])
-  comparisons['win'] = (comparisons[0] < 0.05) & (comparisons['z_win'])
-  
+  comparisons['win'] = (comparisons[0] < P_THRESH) & (comparisons['z_win'])
+
   # Count wins and losses, then add to the system_scores table
   win_counts = comparisons.groupby(["source", "target", "system_x"])['win'].sum().reset_index()
   loss_counts = comparisons.groupby(["source", "target", "system_y"])['win'].sum().reset_index()
@@ -74,43 +75,46 @@ def add_wins_losses_matched(segment_scores, system_scores):
   del system_scores['system_x']
   return system_scores
 
-def add_wins_losses_unmatched(segment_scores, system_scores):
-  """As in add_wins_losses_matched() but use all judgements for each system pair (not just matched)"""
-#     source target      score         z  wins      system  losses
-# 0    eng    hau  71.380258 -0.197747     1         AMU      10
-# 1    eng    isl  49.958291 -0.611475     1  Allegro.eu      10
-# 2    eng    deu  82.369249 -0.391847     0   BUPT_rush      17
-# 3    eng    jpn  79.499882  0.085110     8   BUPT_rush       7
-# 4    eng    zho  79.977509  0.071395    11   BUPT_rush       6
+def add_wins_losses_unmatched(segment_scores, system_scores, matched = False):
+  """As in add_wins_losses_matched() but use all judgements for each system pair (not just matched).
+   Note that setting matched = True here is very slow (because it's a non-pandas implementation)"""
    
-   # Not sure how to do this in pandas, so we build up the wins/losses outside pandas
-  segment_scores['key'] = segment_scores['doc'].str.cat(segment_scores['segment'].astype('str'), sep = "_")
-  min_prop = 1
-  min_prop_name = None
+   # FIXME: This should be done in pandas, since it is very slow.
+  system_scores['wins'] = 0
+  system_scores['losses'] = 0
+  segment_pair_scores = pandas.merge(segment_scores, segment_scores, on = ["source", "target", "segment", "doc"])
   for pair, df in segment_scores.groupby(["source", "target"]):
     systems = df['system'].unique()
-    wins = {s : 0 for s in systems}
-    loses = {s : 0 for s in systems}
-   
     for i, system_x in enumerate(systems):
       for system_y in systems[i+1:]:
-        print (pair, system_x, system_y)
-        keys_x = set(df[df.system == system_x]['key'].unique())
-        keys_y = set(df[df.system == system_y]['key'].unique())
-        intersect = len(keys_x.intersection(keys_y))
-        len_x = len(keys_x)
-        len_y = len(keys_y)
-        prop = min(intersect/len_x, intersect/len_y)
-        if prop < min_prop:
-          min_prop = prop
-          min_prop_name = (pair[0], pair[1], system_x, system_y) 
-        print(f"Intersect: {intersect}; len(x): {len_x}; len(y): {len_y}; prop: {prop}")
-        
         z_x = df[df.system == system_x]['z']
         z_y = df[df.system == system_y]['z']
-  print (min_prop)
-  print(min_prop_name)
-  sys.exit(0)
+        mean_x = z_x.mean()
+        mean_y = z_y.mean()
+        if matched: 
+          # Note that in the matched case, we take the mean across all segments (same as Appraise does) 
+          z = segment_pair_scores[\
+            (segment_pair_scores.source == pair[0]) \
+          & (segment_pair_scores.target == pair[1]) \
+          & (segment_pair_scores.system_x == system_x) \
+          & (segment_pair_scores.system_y == system_y)]
+          z_x = z['z_x']
+          z_y = z['z_y']
+
+        
+        z_win,z_loss,system_win,system_loss = (z_x,z_y,system_x,system_y) if mean_x > mean_y \
+            else (z_y,z_x,system_y,system_x)
+        p = mannwhitneyu(z_win, z_loss, alternative="greater").pvalue
+        if p < P_THRESH:
+          system_scores.loc[(system_scores.source == pair[0])\
+             & (system_scores.target == pair[1])\
+             & (system_scores.system == system_win), "wins"] += 1
+          system_scores.loc[(system_scores.source == pair[0]) \
+             & (system_scores.target == pair[1]) \
+             & (system_scores.system == system_loss), "losses"] += 1
+        if system_win == "BUPT_rush" and pair[1] == "deu":
+          print(system_x, system_y, mean_x, mean_y, p)
+  return system_scores
 
 
 def main():
@@ -131,6 +135,11 @@ def main():
   # so we exclude by default.
   parser.add_argument("-z", "--include-zero-std-annotators", default=False, action="store_true",
     help = "Include annotators with zero standard deviation")
+
+  # Appraise computed pairwaise comparisons using matching segments only. This gives the option
+  # to add in the unmatched segments
+  parser.add_argument("-u", "--include-unmatched", default=False, action="store_true",
+    help = "Include unmatched segments in pairwise system comparison")
 
   args = parser.parse_args()
   
@@ -164,12 +173,14 @@ def main():
   # Note that removing "doc" from the following line reproduces the (incorrect) scores from
   # the first version of the paper
   segment_scores = scores.groupby(["system", "segment", "doc", "source", "target"])[["score", "z"]].mean().reset_index()
-  system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean()
+  system_scores = segment_scores.groupby(["system", "source", "target"])[['score', 'z']].mean().reset_index()
 
 
-  system_scores = add_wins_losses_unmatched(segment_scores, system_scores)
-  print(system_scores.head())
-  sys.exit(0)
+  if args.include_unmatched:
+    system_scores = add_wins_losses_unmatched(segment_scores, system_scores)
+  else:
+    system_scores = add_wins_losses_matched(segment_scores, system_scores)
+  
 
 
   # outputs 
